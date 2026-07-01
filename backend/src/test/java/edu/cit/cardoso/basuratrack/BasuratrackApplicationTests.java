@@ -1,10 +1,10 @@
-package edu.cit.cardoso.basuratrack.BasuraTrack;
+package edu.cit.cardoso.basuratrack;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class BasuraTrackApplicationTests {
+class BasuratrackApplicationTests {
 
 	@Test
 	void contextLoads() {

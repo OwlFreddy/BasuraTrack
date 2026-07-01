@@ -1,13 +1,13 @@
-package edu.cit.cardoso.basuratrack.BasuraTrack;
+package edu.cit.cardoso.basuratrack;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BasuraTrackApplication {
+public class BasuratrackApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BasuraTrackApplication.class, args);
+		SpringApplication.run(BasuratrackApplication.class, args);
 	}
 
 }
