@@ -7,4 +7,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="basura_green">#2E7D32</color>
+    <color name="basura_green_dark">#1B5E20</color>
+    <color name="basura_bg">#F3F6F4</color>
+    <color name="basura_white">#FFFFFF</color>
+    <color name="basura_text_dark">#212121</color>
+    <color name="basura_text_gray">#616161</color>
 </resources>
