@@ -41,6 +41,23 @@ data class LoginResponse(
     val barangay: String? = null
 )
 
+data class ReportRequest(
+    val reporterName: String,
+    val reporterEmail: String,
+    val barangay: String,
+    val description: String
+)
+
+data class ReportResponse(
+    val id: Long? = null,
+    val reporterName: String? = null,
+    val reporterEmail: String? = null,
+    val barangay: String? = null,
+    val description: String? = null,
+    val status: String? = null,
+    val dateReported: String? = null
+)
+
 data class ScheduleResponse(
     val id: Long? = null,
     val barangay: String? = null,
@@ -59,4 +76,8 @@ interface ApiService {
 
     @GET("schedules")
     suspend fun getSchedules(): Response<List<ScheduleResponse>>
+
+    @POST("reports")
+    suspend fun submitReport(@Body request: ReportRequest): Response<ReportResponse>
+
 }

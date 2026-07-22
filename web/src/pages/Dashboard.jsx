@@ -33,7 +33,12 @@ export default function Dashboard() {
                     >
                         Schedule
                     </div>
-                    <div className="dash-nav-item">Reports</div>
+                    <div
+                        className={`dash-nav-item ${isActive("/reports") ? "active" : ""}`}
+                        onClick={() => navigate("/reports")}
+                    >
+                        Reports
+                    </div>
                     <div className="dash-nav-item">Announcements</div>
                     <div className="dash-nav-item">Profile</div>
                 </nav>

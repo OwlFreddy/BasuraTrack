@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basura_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="24dp"
+                android:background="@color/basura_white">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Report Missed Collection"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/basura_green_dark"
+                    android:layout_marginBottom="16dp"/>
+
+                <EditText
+                    android:id="@+id/etReporterName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Name"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/etReporterEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Your Email"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/etBarangay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Barangay"
+                    android:inputType="text"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="12dp"/>
+
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Describe the issue (e.g. missed pickup on Monday)"
+                    android:inputType="textMultiLine"
+                    android:minLines="3"
+                    android:gravity="top"
+                    android:background="@drawable/bg_input_field"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/btnSubmitReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Submit Report"
+                    android:textColor="@color/basura_white"
+                    android:textAllCaps="false"
+                    android:background="@drawable/bg_button_green"
+                    android:padding="14dp"/>
+
+                <TextView
+                    android:id="@+id/tvReportMessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textAlignment="center"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

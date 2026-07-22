@@ -31,6 +31,11 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(Intent(this, ScheduleListActivity::class.java))
         }
 
+        val btnReportMissed = findViewById<Button>(R.id.btnReportMissed)
+        btnReportMissed.setOnClickListener {
+            startActivity(Intent(this, ReportActivity::class.java))
+        }
+
         btnLogout.setOnClickListener {
             prefs.edit().clear().apply()
             startActivity(Intent(this, LoginActivity::class.java))

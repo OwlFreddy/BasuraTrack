@@ -3,6 +3,7 @@ import Login from "./pages/Login";
 import Register from "./pages/Register";
 import Dashboard from "./pages/Dashboard";
 import Schedules from "./pages/Schedules";
+import Reports from "./pages/Reports";
 
 function App() {
     return (
@@ -14,6 +15,7 @@ function App() {
                 <Route path="/schedules" element={<Schedules />} />
                 <Route path="/" element={<Navigate to="/login" replace />} />
                 <Route path="*" element={<Navigate to="/login" replace />} />
+                <Route path="/reports" element={<Reports />} />
             </Routes>
         </BrowserRouter>
     );
