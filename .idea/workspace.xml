@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="945c1a68-b79f-4bb1-9b18-5d738962b65d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mobile/app/src/main/java/edu/cit/cardoso/basuratrack/data/network/ApiService.kt" beforeDir="false" afterPath="$PROJECT_DIR$/mobile/app/src/main/java/edu/cit/cardoso/basuratrack/data/network/ApiService.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/web/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/src/pages/Dashboard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/web/src/pages/Dashboard.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
