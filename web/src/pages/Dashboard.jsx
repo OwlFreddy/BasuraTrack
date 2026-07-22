@@ -1,8 +1,9 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import "../styles/dashboard.css";
 
 export default function Dashboard() {
     const navigate = useNavigate();
+    const location = useLocation();
     const stored = localStorage.getItem("user");
     const user = stored ? JSON.parse(stored) : null;
     const fullName = user?.fullName || "Resident";
@@ -13,13 +14,25 @@ export default function Dashboard() {
         navigate("/login");
     };
 
+    const isActive = (path) => location.pathname === path;
+
     return (
         <div className="dash-shell">
             <aside className="dash-sidebar">
                 <div className="dash-sidebar-brand">🗑️ BasuraTrack</div>
                 <nav className="dash-nav">
-                    <div className="dash-nav-item active">Dashboard</div>
-                    <div className="dash-nav-item">Schedule</div>
+                    <div
+                        className={`dash-nav-item ${isActive("/dashboard") ? "active" : ""}`}
+                        onClick={() => navigate("/dashboard")}
+                    >
+                        Dashboard
+                    </div>
+                    <div
+                        className={`dash-nav-item ${isActive("/schedules") ? "active" : ""}`}
+                        onClick={() => navigate("/schedules")}
+                    >
+                        Schedule
+                    </div>
                     <div className="dash-nav-item">Reports</div>
                     <div className="dash-nav-item">Announcements</div>
                     <div className="dash-nav-item">Profile</div>

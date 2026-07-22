@@ -19,12 +19,17 @@ class DashboardActivity : AppCompatActivity() {
         val tvEmail = findViewById<TextView>(R.id.tvEmail)
         val tvBarangay = findViewById<TextView>(R.id.tvBarangay)
         val tvRole = findViewById<TextView>(R.id.tvRole)
+        val btnViewSchedules = findViewById<Button>(R.id.btnViewSchedules)
         val btnLogout = findViewById<Button>(R.id.btnLogout)
 
         tvWelcome.text = "Welcome, ${prefs.getString("fullName", "")}!"
         tvEmail.text = "Email: ${prefs.getString("email", "")}"
         tvBarangay.text = "Barangay: ${prefs.getString("barangay", "")}"
         tvRole.text = "Role: ${prefs.getString("role", "")}"
+
+        btnViewSchedules.setOnClickListener {
+            startActivity(Intent(this, ScheduleListActivity::class.java))
+        }
 
         btnLogout.setOnClickListener {
             prefs.edit().clear().apply()
